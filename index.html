@@ -622,7 +622,7 @@
             <div class="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2">
                 <!-- Image Container -->
                 <div class="relative h-[440px] overflow-hidden">
-                    <img src="./assets/img/b8ed3bf34fd2dd52d1a157ffc331bd07.webp" 
+                    <img src="./assets/img/furniture-moving-in-riyadh.webp" 
                          alt="نقل عفش بالرياض"
                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark/60 via-dark/20 to-transparent"></div>
@@ -683,12 +683,13 @@
                             <i class="fas fa-phone-alt"></i>
                             <span>اتصل</span>
                         </a>
-                        <a href="https://wa.me/966501234567?text=مرحباً، أريد حجز خدمة نقل عفش" 
-                           target="_blank"
-                           class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 group-hover:shadow-lg flex items-center justify-center gap-1">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>واتساب</span>
-                        </a>
+                        <a href="./furniture-moving-in-riyadh/"
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 group-hover:shadow-lg flex items-center justify-center gap-2">
+                                
+                                <span>اقرأ المزيد</span>
+                                <i class="fas fa-arrow-left"></i>
+
+                            </a>
                     </div>
                 </div>
             </div>
@@ -2596,6 +2597,15 @@
             </div>
         </div>
     </div>
+    <!-- Lazy Loading للصور -->
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+let images=document.querySelectorAll("img");
+images.forEach(img=>{
+img.setAttribute("loading","lazy");
+});
+});
+</script>
 
     <!-- Scripts -->
     <script src="./assets/js/main.js"></script>
