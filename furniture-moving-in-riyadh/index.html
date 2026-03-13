@@ -29,30 +29,56 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "نقل عفش بالرياض",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "شركة الخليج لنقل العفش",
-    "image": "https://alkaleej-moving.com/assets/img/furniture-moving-in-riyadh.webp",
-    "telePhone": "0503430106",
-    "url": "https://alkaleej-moving.com/",
-    "logo": "https://alkaleej-moving.com/assets/img/gulf.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "الرياض",
-      "addressLocality": "Riyadh",
-      "addressCountry": "SA"
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "نقل عفش بالرياض",
+      "serviceType": "Moving Service",
+      "description": "شركة الخليج لنقل عفش بالرياض توفر خدمات نقل الأثاث مع الفك والتركيب والتغليف بأفضل الأسعار.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "شركة الخليج لنقل العفش",
+        "image": "https://alkaleej-moving.com/assets/img/furniture-moving-in-riyadh.webp",
+        "telePhone": "0503430106",
+        "url": "https://alkaleej-moving.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "الرياض",
+          "addressLocality": "Riyadh",
+          "addressCountry": "SA"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "الرياض"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alkaleej-moving.com/furniture-moving-in-riyadh/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما أفضل شركة نقل عفش بالرياض؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "شركة الخليج تعتبر من أفضل الشركات التي تقدم خدمات متكاملة مع الفك والتركيب والضمان."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم سعر نقل العفش بالرياض؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تبدأ أسعار نقل العفش لدينا من 300 ريال وتختلف حسب كمية الأثاث والمسافة."
+          }
+        }
+      ]
     }
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "الرياض"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://alkaleej-moving.com/furniture-moving-in-riyadh/"
-  }
+  ]
 }
 </script>
 

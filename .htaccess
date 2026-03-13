@@ -1,8 +1,9 @@
 RewriteEngine On
 
-# إزالة www
-RewriteCond %{HTTP_HOST} ^www\.alkaleej-moving\.com [NC]
-RewriteRule ^(.*)$ https://alkaleej-moving.com/$1 [R=301,L]
+# توحيد النطاق إلى HTTPS وبدون WWW في خطوة واحدة
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://alkaleej-moving.com/$1 [L,R=301]
 
 # حذف index.html
 RewriteCond %{THE_REQUEST} /index\.html [NC]
