@@ -504,6 +504,13 @@
             details: "نغطي فلل وشقق حي العليا، نقل الأثاث مع التغليف الاحترافي والحماية الكاملة من الخدوش والصدمات.", 
             link : "./hayu-aleulya/" 
         },    
+        { 
+    name: "حي الخليج", 
+    img: "../assets/img/hayu-alkhalij.webp", 
+    summary: "خدمات نقل عفش بالرياض لحي الخليج بأيدي مدربة وسيارات مجهزة.", 
+    details: "نغطي جميع منازل وشقق حي الخليج، مع توفير خدمات فك وتركيب وتغليف الأثاث باستخدام أفضل المواد لضمان الحماية الكاملة أثناء النقل.", 
+    link : "./hayu-alkhalij/" 
+},
         ];
 
         let currentPage = 1;
@@ -519,7 +526,7 @@
                 const card = document.createElement('div');
                 card.className = 'neighborhood-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all';
                 card.innerHTML = `
-            <div class="h-48 overflow-hidden">
+            <div class="h-80 ">
               <img src="${hood.img}" alt="${hood.name}" class="w-full h-full object hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
